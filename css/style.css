@@ -1,0 +1,172 @@
+:root {
+  --font: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  transition: 2s;
+}
+.break {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  padding-left: 100px;
+
+
+}
+.padding {
+  margin-top: 60px;
+  padding-bottom: 80px;
+  margin-left: 100px;
+
+}
+
+.break {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+.light {
+    background: #f8f0fc;
+}
+.sombre {
+    background: #26282b;
+
+}
+
+.msg {
+  padding: 4rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.content, .contenu{
+  display: grid;
+  grid-template-columns: max-content;
+  line-height: 1.1;
+  font-size: 4em;
+  font-family: var(--font)}
+.color {
+    color: white;
+}
+.black {
+    color: #26282b;
+}
+
+.content > div:last-child {
+    background: linear-gradient(
+        to right, 
+        hsl(98 100% 62%), 
+        hsl(204 100% 59%)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;}
+
+.contenu > div:last-child {
+  background-image: linear-gradient(
+    43deg, 
+    #4158D0 0%,
+    #C850C0 46%,
+    #FFCC70 100%);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+    
+
+
+.p1 {
+  font-size: 1.5rem;
+  margin-block-end: 1rem;
+  opacity: 0.8;
+}
+
+
+
+
+.pic {
+  align-self: stretch;
+}
+
+.pic > img {
+  object-fit: cover;
+  margin-left: 30px;
+}
+
+
+.reveal{
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+picture img {
+  width: 400px;
+
+}
+
+.changed {
+  background: #1A1A40;
+
+}
+.footer {
+  background-color: black;
+}
+
+#footer {
+  height: 80vh;
+}
+.disapear{
+  position: relative;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .break {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+  }
+  .reverse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  .content, .contenu{
+    display: grid;
+    grid-template-columns:auto;
+    line-height: 1;
+    font-size: 2.2em;
+  }
+  .p1 {
+    font-size: 1rem;
+    margin-block-end: 1rem;
+    opacity: 0.8;
+  }
+  .big {
+    max-width: 300px;
+  }
+  .msg {
+    padding: 10px;
+  }
+  .padding {
+    margin-top: 30px;
+  
+  }
+  
+
+
+
+}
+

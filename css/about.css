@@ -1,0 +1,54 @@
+
+body {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+}
+
+header {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  background: #f8f0fc;
+  font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
+  
+}
+
+.hero {
+  padding: drem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.message {
+  display: grid;
+  grid-template-columns: max-content;
+  color: #212529;
+  line-height: 1.1;
+  font-size: 50px;
+}
+
+.title {
+  color: #4263eb;
+  margin-top: -20vh;
+  font-size: 40px;
+
+}
+
+.message {
+  color: #495057;
+  font-size: 1.5rem;
+  margin-block-end: var(--size-3);
+}
+
+.picture {
+  align-self: stretch;
+  background-color:#4263eb;
+  height: 100vh;
+}
+
+.picture > img {
+  block-size: 100%;
+  object-fit: cover;
+}
