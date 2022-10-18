@@ -1,12 +1,12 @@
-var val=True
+var val=1
 function dark() {
-    if(val) {
+    if(val==1) {
         document.body.setAttribute("class", "sombre color")
 
-        val=False;
+        val=0;
     } else  {
         document.body.setAttribute("class", "light black")
-        val=True
+        val=1
 
     }
 }
